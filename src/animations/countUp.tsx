@@ -1,8 +1,11 @@
-const counter = (end: number, endTime: number, setFunc: object) => {
+const counter = (
+  end: number,
+  endTime: number,
+  setFunc: (number: number) => void
+) => {
   let now = end;
 
   const handle = setInterval(() => {
-    const time = Number(new Date());
     if (now < 0) {
       setFunc(end);
       clearInterval(handle);

@@ -11,7 +11,6 @@ const Metric = (props: MetricProps) => {
   const limitTime = Number(new Date());
 
   useEffect(() => {
-    console.log(new Date().getDate);
     setTimeout(() => counter(numberCounter, limitTime, setPrintNumber), 100);
   }, []);
   return (

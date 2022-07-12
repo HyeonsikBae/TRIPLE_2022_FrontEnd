@@ -8,7 +8,7 @@ const Badge = (props: BadgeProps) => {
   const renderTexts = () => {
     return texts.map((text, i) => {
       return (
-        <p style={{ margin: 0 }} key={i}>
+        <p style={{ margin: 0, whiteSpace: "nowrap" }} key={i}>
           {text}
         </p>
       );

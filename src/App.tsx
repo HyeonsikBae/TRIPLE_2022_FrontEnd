@@ -1,9 +1,11 @@
 import GlobalStyle from "./GlobalStyle";
+import Section from "./components/Section/Section";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <Section />
     </div>
   );
 }

@@ -10,24 +10,28 @@ export const SectionReponsive = styled.div`
   width: 1040px;
   margin: auto;
 `;
+
 export const SectionRight = styled.div`
   position: absolute;
-  margin-left: 623px;
-  padding-top: 150px;
 `;
+
 export const LogoArea = styled.div<DelayProps>`
   position: relative;
   top: 150px;
   animation: ${fadeInAnimation} 700ms ease-in-out;
   animation-delay: ${(prop) => prop.delay}ms;
 `;
+
 export const MetricArea = styled.div<DelayProps>`
   animation: ${fadeInAnimation} 700ms ease-in-out;
   animation-delay: ${(prop) => prop.delay}ms;
+  margin-left: 623px;
+  padding-top: 150px;
 `;
+
 export const BadgeArea = styled.div<DelayProps>`
   display: flex;
-  margin-top: 50px;
   animation: ${fadeInAnimation} 700ms ease-in-out;
   animation-delay: ${(prop) => prop.delay}ms;
+  margin: 50px 0px 140px 623px;
 `;
